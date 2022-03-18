@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Product</title>
+
+  <link rel="stylesheet" href="https://bootswatch.com/5/journal/bootstrap.min.css">
+</head>
+
+<body>
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Products App</a>
+  </div>
+</nav>
+
+<!-- APP -->
+
+<div class="container">
+  <div id="App" class="row pt-5">
+    <div class="col-md-4" id="Add Product">
+      <div class="card">
+        <div class="card-header">
+            <h4> Add a Product</h4>
+          </div>
+        <form class="card-body" id="Product">
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Add a name">
+          </div>
+          <div class="form-group ">
+            <input type="number" class="form-control mt-2" step="0.01" id="price" placeholder="Add a price">
+          </div>
+          <div class="form-group">
+            <input type="number" class="form-control mt-2" min="1900" value="2022" id="year" placeholder="Add a year">
+          </div> 
+          <div class="d-grid gap-2">
+            <input type="submit" class="btn btn-info mt-2" value="Save">
+          </div>
+        </form>
+      </div>
+    </div>
+      <!-- PRODUCT LIST -->
+    <div class="col-md-8" id="Product-list"></div>
+  </div>
+
+</div>
+  
+<script src="app.js"></script>
+</body>
+</html>
